@@ -1,0 +1,9 @@
+---
+applications:
+  - buildpack: https://github.com/cloudfoundry/go-buildpack.git
+  - name: my-ws
+    command: server
+    domain: cf-tcpapps.io
+    env:
+      GOVERSION: 1.10.5
+      GOPACKAGENAME: github.com/dgruber/websocket/server 
