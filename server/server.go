@@ -40,7 +40,7 @@ func echo(w http.ResponseWriter, r *http.Request) {
 }
 
 func home(w http.ResponseWriter, r *http.Request) {
-    homeTemplate.Execute(w, "ws://"+r.Host+":4443/echo")
+    homeTemplate.Execute(w, "wss://"+r.Host+"/echo")
 }
 
 func main() {
